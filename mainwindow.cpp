@@ -18,11 +18,7 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_W)
     {
-        QMessageBox message;
-        message.setWindowTitle("Nachricht");
-        message.setText("Du hast W Gedrückt");
-        message.setStandardButtons(QMessageBox::Ok);
-        message.exec();
+        character->jump();
     }
     if (event->key() == Qt::Key_D)
     {

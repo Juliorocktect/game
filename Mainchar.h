@@ -3,6 +3,8 @@
 #include <QLabel>
 #include <QPixmap>
 #include <QMainWindow>
+#include <unistd.h>
+
 class Mainchar
 {
 private:
@@ -13,6 +15,7 @@ private:
 
 public:
     Mainchar(QMainWindow *window, int coordX, int coordY);
+    ~Mainchar();
     void show();
     void hit();
     void moveRight();
@@ -20,4 +23,5 @@ public:
     void activateGravity();
     void jump();
     void moveDown();
+    void deactivateGravity();
 };

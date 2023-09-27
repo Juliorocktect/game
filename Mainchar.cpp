@@ -13,24 +13,27 @@ Mainchar::Mainchar(QMainWindow *window, int coordX, int coordY)
     label->move(coordX, coordY);
     alive = true;
 }
+Mainchar::~Mainchar()
+{
+    delete label, pixmap, health, coordinateX, coordinateY, alive, amountOfAmmo;
+}
 void Mainchar::moveRight()
 {
-    label->move(coordinateX + 20, coordinateY);
-    coordinateX += 20;
+    label->move(coordinateX + 40, coordinateY);
+    coordinateX += 40;
 }
 void Mainchar::moveLeft()
 {
-    label->move(coordinateX - 20, coordinateY);
-    coordinateX -= 20;
+    label->move(coordinateX - 40, coordinateY);
+    coordinateX -= 40;
 }
 void Mainchar::moveDown()
 {
-    label->move(coordinateX, coordinateY - 2);
-    coordinateY -= 2;
+    label->move(coordinateX, coordinateY + 1);
+    coordinateY += 1;
 }
-void Mainchar::activateGravity()
+void Mainchar::jump()
 {
-    while (alive)
-    {
-    }
+    label->move(coordinateX, coordinateY - 50);
+    coordinateY -= 50;
 }
