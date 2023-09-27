@@ -1,0 +1,9 @@
+/.vscode
+/CMakeCache.txt
+/CMakeFiles
+/CMakeLists.txt.user
+/Makefile
+/build
+/cmake_install.cmake
+/qt-game
+/qt-game_autogen
