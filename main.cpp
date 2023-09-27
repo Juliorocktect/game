@@ -2,6 +2,7 @@
 #include "Mainchar.h"
 #include <thread>
 #include <QApplication>
+#include "Background.h"
 
 int main(int argc, char *argv[])
 {

@@ -19,6 +19,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         Mainchar.cpp
+        Background.cpp
+        Background.h
         mainwindow.ui
         Mainchar.h
         

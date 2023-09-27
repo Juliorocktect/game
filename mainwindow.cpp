@@ -5,6 +5,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->centralWidget()->setStyleSheet(
+        "background-image:url(\"/home/julio/Bilder/123.jpg\"); background-position: center;");
 }
 
 MainWindow::~MainWindow()
