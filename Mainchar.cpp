@@ -12,6 +12,7 @@ Mainchar::Mainchar(QMainWindow *window, int coordX, int coordY)
     coordinateY = coordY;
     label->move(coordX, coordY);
     alive = true;
+    gravity = 1;
 }
 Mainchar::~Mainchar()
 {
@@ -29,11 +30,29 @@ void Mainchar::moveLeft()
 }
 void Mainchar::moveDown()
 {
-    label->move(coordinateX, coordinateY + 1);
-    coordinateY += 1;
+    label->move(coordinateX, coordinateY + gravity);
+    coordinateY += gravity;
+    std::cout << coordinateX;
+    std::cout << coordinateY;
 }
 void Mainchar::jump()
 {
     label->move(coordinateX, coordinateY - 50);
     coordinateY -= 50;
+}
+void Mainchar::deactivateGravity()
+{
+    gravity = 0;
+}
+void Mainchar::activateGravity()
+{
+    gravity = 1;
+}
+bool Mainchar::isAlive() { return alive; }
+Coords Mainchar::getCoords()
+{
+    Coords coords;
+    coords.coordX = coordinateX;
+    coords.coordY = coordinateY;
+    return coords;
 }

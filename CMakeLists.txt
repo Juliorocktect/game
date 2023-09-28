@@ -25,9 +25,9 @@ set(PROJECT_SOURCES
         Background.h
         mainwindow.ui
         Mainchar.h
-        
+        stone.h
+        stone.cpp
 )
-
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(qt-game
         MANUAL_FINALIZATION
