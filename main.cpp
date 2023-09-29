@@ -20,7 +20,7 @@ void checkForCollision(QLabel *l1, QLabel *l2, Mainchar *character)
 {
     while (1)
     {
-        if (mycode::checkForCollision(*l1, *l2))
+        if (mycode::checkForCollision(l1, l2))
         {
             character->deactivateGravity();
         }

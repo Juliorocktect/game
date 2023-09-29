@@ -23,8 +23,6 @@ public:
     ~MainWindow();
     void keyPressEvent(QKeyEvent *event) override;
     void setCharacter(Mainchar *character);
-public slots:
-    void gravity(Mainchar *character);
 
 private:
     Ui::MainWindow *ui;

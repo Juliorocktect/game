@@ -19,3 +19,4 @@ Coords Stone::getCoordinates()
     coords.coordY = coordY;
     return coords;
 }
+QLabel *Stone::getLabel() { return label; }

@@ -16,11 +16,10 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
+        Mycode.cpp
         mainwindow.cpp
         mainwindow.h
         Mainchar.cpp
-        Mycode.h
-        Mycode.cpp
         mainwindow.ui
         Mainchar.h
         stone.h

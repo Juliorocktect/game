@@ -5,5 +5,5 @@
 namespace mycode
 {
     void gravity();
-    bool checkForCollision(QLabel &label1,QLabel &label2);
+    bool checkForCollision(QLabel *label1, QLabel *label2);
 };

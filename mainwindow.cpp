@@ -29,7 +29,3 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
         character->moveLeft();
     }
 }
-void MainWindow::gravity(Mainchar *character)
-{
-    character->moveDown();
-}
