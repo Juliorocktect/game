@@ -18,4 +18,5 @@ private:
 public:
     Stone(QMainWindow *window, int coodX, int coordY);
     Coords getCoordinates();
+    QLabel *getLabel();
 };

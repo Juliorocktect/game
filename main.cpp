@@ -6,6 +6,8 @@
 #include <thread>
 #include <unistd.h>
 #include "stone.h"
+#include <QRect>
+#include "Mycode.h"
 
 void grav(bool status, Mainchar *character)
 {
@@ -15,11 +17,11 @@ void grav(bool status, Mainchar *character)
         usleep(10000);
     }
 }
-void checkForCollision(Mainchar *character, Stone *stone)
+void checkForCollision(QLabel *l1, QLabel *l2, Mainchar *character)
 {
     while (1)
     {
-        if (character->getCoords().coordX == stone->getCoordinates().coordX)
+        if (mycode::checkForCollision(*l1, *l2))
         {
             character->deactivateGravity();
         }
@@ -40,6 +42,6 @@ int main(int argc, char *argv[])
     w.setCharacter(&character);
     std::thread t1(grav, character.isAlive(), &character);
     Stone stone1(&w, 100, 100);
-    std::thread checker(checkForCollision, &character, &stone1);
+    std::thread checker(checkForCollision, character.getLabel(), stone1.getLabel(), &character);
     return a.exec();
 }

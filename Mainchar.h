@@ -5,7 +5,6 @@
 #include <QMainWindow>
 #include <unistd.h>
 #include "stone.h"
-#include <iostream>
 
 class Mainchar
 {
@@ -29,4 +28,5 @@ public:
     void deactivateGravity();
     bool isAlive();
     Coords getCoords();
+    QLabel *getLabel();
 };

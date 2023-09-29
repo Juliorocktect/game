@@ -32,8 +32,6 @@ void Mainchar::moveDown()
 {
     label->move(coordinateX, coordinateY + gravity);
     coordinateY += gravity;
-    std::cout << coordinateX;
-    std::cout << coordinateY;
 }
 void Mainchar::jump()
 {
@@ -49,10 +47,4 @@ void Mainchar::activateGravity()
     gravity = 1;
 }
 bool Mainchar::isAlive() { return alive; }
-Coords Mainchar::getCoords()
-{
-    Coords coords;
-    coords.coordX = coordinateX;
-    coords.coordY = coordinateY;
-    return coords;
-}
+QLabel* Mainchar::getLabel() { return label; }
