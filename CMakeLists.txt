@@ -19,10 +19,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         Mainchar.cpp
-        Background.cpp
         Mycode.h
         Mycode.cpp
-        Background.h
         mainwindow.ui
         Mainchar.h
         stone.h

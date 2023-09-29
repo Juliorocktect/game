@@ -2,7 +2,6 @@
 #include "Mainchar.h"
 #include <thread>
 #include <QApplication>
-#include "Background.h"
 #include <thread>
 #include <unistd.h>
 #include "stone.h"
