@@ -16,7 +16,7 @@ private:
     QPixmap pixmap;
 
 public:
-    Stone(QMainWindow *window, int coodX, int coordY);
+    Stone(QMainWindow *window, int coordX, int coordY);
     Coords getCoordinates();
     QLabel *getLabel();
 };

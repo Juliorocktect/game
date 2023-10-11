@@ -12,4 +12,12 @@ namespace mycode
         }
         return false;
     }
+    bool isDead(MainWindow *w, Mainchar *character)
+    {
+        if (w->geometry().height() == character->getCoords().coordY)
+        {
+            return true;
+        }
+        return false;
+    }
 }

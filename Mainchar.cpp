@@ -47,4 +47,11 @@ void Mainchar::activateGravity()
     gravity = 1;
 }
 bool Mainchar::isAlive() { return alive; }
-QLabel* Mainchar::getLabel() { return label; }
+QLabel *Mainchar::getLabel() { return label; }
+Coords Mainchar::getCoords()
+{
+    Coords coords;
+    coords.coordX = coordinateX;
+    coords.coordY = coordinateY;
+    return coords;
+}

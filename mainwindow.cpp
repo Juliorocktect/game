@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
 void MainWindow::setCharacter(Mainchar *character) { this->character = character; }
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_W)
+    if (event->key() == Qt::Key_W || event->key() == Qt::Key_Space)
     {
         character->jump();
     }
@@ -27,5 +27,9 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     if (event->key() == Qt::Key_A)
     {
         character->moveLeft();
+    }
+    if (event->key() == Qt::Key_Escape)
+    {
+        // show menu screen
     }
 }
